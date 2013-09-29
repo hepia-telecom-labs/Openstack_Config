@@ -1,3 +1,13 @@
+## Answer File corresponding to scenario n°1
+## Date         : 27/09/2013
+## Contributor  : Benoît Chalut
+## Project      : Master Thesis HES-SO Openstack HA
+
+#IP Cloud Controller  : 10.2.4.101
+#IP Network Node      : 10.2.4.102
+#IP Compute Node      : 10.2.4.102
+
+
 [general]
 
 # Path to a Public key to install on servers. If a usable key has not
@@ -332,7 +342,7 @@ CONFIG_PROVISION_TEMPEST_REPO_REVISION=master
 CONFIG_PROVISION_ALL_IN_ONE_OVS_BRIDGE=n
 
 # The IP address of the server on which to install Heat service
-CONFIG_HEAT_HOST=10.2.4.100
+CONFIG_HEAT_HOST=
 
 # The password used by Heat user to authenticate against MySQL
 CONFIG_HEAT_DB_PW=7d934e4e60214c2e
