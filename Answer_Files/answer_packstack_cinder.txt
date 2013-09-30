@@ -1,11 +1,12 @@
-## Answer File corresponding to scenario n°1
-## Date         : 27/09/2013
+## Answer File corresponding to scenario n°2
+## Date         : 30/09/2013
 ## Contributor  : Benoît Chalut
 ## Project      : Master Thesis HES-SO Openstack HA
 
 #IP Cloud Controller  : 10.2.4.101
 #IP Network Node      : 10.2.4.102
 #IP Compute Node      : 10.2.4.102
+#IP Cinder Host	      : 10.2.4.100
 
 
 [general]
@@ -108,7 +109,7 @@ CONFIG_GLANCE_DB_PW=e23812efa80d4b3e
 CONFIG_GLANCE_KS_PW=219c5216a2a045ad
 
 # The IP address of the server on which to install Cinder
-CONFIG_CINDER_HOST=10.2.4.103
+CONFIG_CINDER_HOST=10.2.4.100
 
 # The password to use for the Cinder to access DB
 CONFIG_CINDER_DB_PW=a1f5a38c2e474e71
@@ -122,7 +123,7 @@ CONFIG_CINDER_BACKEND=lvm
 # Create Cinder's volumes group. This should only be done for testing
 # on a proof-of-concept installation of Cinder.  This will create a
 # file-backed volume group and is not suitable for production usage.
-CONFIG_CINDER_VOLUMES_CREATE=y
+CONFIG_CINDER_VOLUMES_CREATE=n
 
 # Cinder's volumes group size. Note that actual volume size will be
 # extended with 3% more space for VG metadata.

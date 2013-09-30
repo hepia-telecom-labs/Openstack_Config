@@ -193,7 +193,7 @@ CONFIG_NOVA_NETWORK_PRIVIF=eth1
 CONFIG_NOVA_NETWORK_FIXEDRANGE=192.168.32.0/22
 
 # IP Range for Floating IP's
-CONFIG_NOVA_NETWORK_FLOATRANGE=10.2.3.10/29
+CONFIG_NOVA_NETWORK_FLOATRANGE=10.1.3.10/29
 
 # Name of the default floating pool to which the specified floating
 # ranges are added to
