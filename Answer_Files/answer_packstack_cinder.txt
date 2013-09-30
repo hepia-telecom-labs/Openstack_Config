@@ -1,4 +1,4 @@
-## Answer File corresponding to scenario n°2
+## Answer File corresponding to scenario n°3
 ## Date         : 30/09/2013
 ## Contributor  : Benoît Chalut
 ## Project      : Master Thesis HES-SO Openstack HA
