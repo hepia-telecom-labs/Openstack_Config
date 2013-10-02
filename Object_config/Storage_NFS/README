@@ -1,0 +1,5 @@
+Enable NFS automount, copy .mount and .automount in /etc/systemd/system/
+To Enable Unit Files :
+systemctl daemon-reload
+systemctl restart var-lib-nova-instances.automount
+systemctl enable var-lib-nova-instances.automount

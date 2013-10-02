@@ -1,0 +1,8 @@
+[Unit]
+Description=NFS Storage Automount
+Wants=network.target rpcbind.service
+After=network.service rpcbind.service
+[Automount]
+Where=/var/lib/nova/instances
+[Install]
+WantedBy=multiuser.target
