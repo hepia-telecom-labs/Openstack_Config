@@ -1,5 +1,5 @@
 [Unit]
-Description=Mount NFSStorage for VM
+Description=Mount NFS Storage for VM
 Wants=network.target rpcbind.service
 After=network.service rpcbind.service
 [Mount]
@@ -7,6 +7,6 @@ What=10.1.4.1:/OPS_instances
 Where=/var/lib/nova/instances
 Type=nfs
 Options=noatime
-TimeoutSec=15
+TimeoutSec=300
 StandardOutput=syslog
 StandardError=syslog
