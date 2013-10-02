@@ -1,0 +1,1 @@
+To renaming Network Interface in EthX, you have to put udev rules in /lib/udev/rules.d/
