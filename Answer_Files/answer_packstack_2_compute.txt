@@ -164,7 +164,7 @@ CONFIG_NOVA_KS_PW=81677f6f37e04f99
 
 # The IP address of the server on which to install the Nova Scheduler
 # service
-CONFIG_NOVA_SCHED_HOST=10.2.4.101
+CONFIG_NOVA_SCHED_HOST=10.2.4.102
 
 # The overcommitment ratio for virtual to physical CPUs. Set to 1.0
 # to disable CPU overcommitment

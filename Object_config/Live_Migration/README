@@ -1,0 +1,6 @@
+Config to enable Live-Migration (Config only to computes nodes) :
+
+libvirt.conf 	-> /etc/libvirt
+libvirtd	-> /etc/sysconfig/
+nova.conf	-> /etc/nova/nova.conf
+
