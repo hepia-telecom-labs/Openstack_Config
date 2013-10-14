@@ -67,7 +67,7 @@ CONFIG_NAGIOS_INSTALL=y
 # case you are running Packstack the second time with the same answer
 # file and don't want Packstack to touch these servers. Leave plain if
 # you don't need to exclude any server.
-EXCLUDE_SERVERS=10.2.4.101,10.2.4.102,10.2.4.103
+EXCLUDE_SERVERS=
 
 # The IP address of the server on which to install MySQL
 CONFIG_MYSQL_HOST=10.2.4.101
@@ -109,7 +109,7 @@ CONFIG_GLANCE_DB_PW=e23812efa80d4b3e
 CONFIG_GLANCE_KS_PW=219c5216a2a045ad
 
 # The IP address of the server on which to install Cinder
-CONFIG_CINDER_HOST=10.2.4.103
+CONFIG_CINDER_HOST=10.2.4.104
 
 # The password to use for the Cinder to access DB
 CONFIG_CINDER_DB_PW=a1f5a38c2e474e71
@@ -150,7 +150,7 @@ CONFIG_NOVA_VNCPROXY_HOST=10.2.4.101
 
 # A comma separated list of IP addresses on which to install the Nova
 # Compute services
-CONFIG_NOVA_COMPUTE_HOSTS=10.2.4.103,10.2.4.104
+CONFIG_NOVA_COMPUTE_HOSTS=10.2.4.103
 
 # The IP address of the server on which to install the Nova Conductor
 # service

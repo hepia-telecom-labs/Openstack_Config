@@ -1,21 +1,4 @@
-## Answer File corresponding to scenario n°1 V2.0
-## Date         : 14/10/2013
-## Contributor  : Benoît Chalut
-## Project      : Master Thesis HES-SO Openstack HA
-
-#IP Cloud Controller  : 10.2.4.101
-#IP Network Node      : 10.2.4.102
-#IP Compute Node01    : 10.2.4.103
-#IP Cinder Node API   : 10.2.4.104
-#IP Cinder Volume     : 10.2.4.105
-
 [general]
-
-# Path to a Public key to install on servers. If a usable key has not
-# been installed on the remote servers the user will be prompted for a
-# password and this key will be installed so the password will not be
-# required again
-CONFIG_SSH_KEY=/root/.ssh/id_rsa.pub
 
 # Set to 'y' if you would like Packstack to install MySQL
 CONFIG_MYSQL_INSTALL=y
@@ -69,6 +52,12 @@ CONFIG_NAGIOS_INSTALL=y
 # you don't need to exclude any server.
 EXCLUDE_SERVERS=
 
+# Path to a Public key to install on servers. If a usable key has not
+# been installed on the remote servers the user will be prompted for a
+# password and this key will be installed so the password will not be
+# required again
+CONFIG_SSH_KEY=/root/.ssh/id_rsa.pub
+
 # The IP address of the server on which to install MySQL
 CONFIG_MYSQL_HOST=10.2.4.101
 
@@ -76,7 +65,7 @@ CONFIG_MYSQL_HOST=10.2.4.101
 CONFIG_MYSQL_USER=root
 
 # Password for the MySQL admin user
-CONFIG_MYSQL_PW=6eaf97d4c1f444c3
+CONFIG_MYSQL_PW=d5d31aff1f3547d6
 
 # The IP address of the server on which to install the QPID service
 CONFIG_QPID_HOST=10.2.4.101
@@ -85,16 +74,16 @@ CONFIG_QPID_HOST=10.2.4.101
 CONFIG_KEYSTONE_HOST=10.2.4.101
 
 # The password to use for the Keystone to access DB
-CONFIG_KEYSTONE_DB_PW=f1c6ba043ff64526
+CONFIG_KEYSTONE_DB_PW=d1cb13623a5c42d5
 
 # The token to use for the Keystone service api
-CONFIG_KEYSTONE_ADMIN_TOKEN=961593da26b54ad2964d6b766f2c70a5
+CONFIG_KEYSTONE_ADMIN_TOKEN=aac8e2da589845dfb3bfa0cce8ed4089
 
 # The password to use for the Keystone admin user
-CONFIG_KEYSTONE_ADMIN_PW=5e1f559bd90d4126
+CONFIG_KEYSTONE_ADMIN_PW=17348a683bc44262
 
 # The password to use for the Keystone demo user
-CONFIG_KEYSTONE_DEMO_PW=4249a1feb7b5424b
+CONFIG_KEYSTONE_DEMO_PW=4f748301629943d6
 
 # Kestone token format. Use either UUID or PKI
 CONFIG_KEYSTONE_TOKEN_FORMAT=PKI
@@ -103,19 +92,19 @@ CONFIG_KEYSTONE_TOKEN_FORMAT=PKI
 CONFIG_GLANCE_HOST=10.2.4.101
 
 # The password to use for the Glance to access DB
-CONFIG_GLANCE_DB_PW=e23812efa80d4b3e
+CONFIG_GLANCE_DB_PW=4e8354d27c5d4d73
 
 # The password to use for the Glance to authenticate with Keystone
-CONFIG_GLANCE_KS_PW=219c5216a2a045ad
+CONFIG_GLANCE_KS_PW=7d8793c6dff94360
 
 # The IP address of the server on which to install Cinder
 CONFIG_CINDER_HOST=10.2.4.104
 
 # The password to use for the Cinder to access DB
-CONFIG_CINDER_DB_PW=a1f5a38c2e474e71
+CONFIG_CINDER_DB_PW=4885e2e65582438f
 
 # The password to use for the Cinder to authenticate with Keystone
-CONFIG_CINDER_KS_PW=201ad31796c84767
+CONFIG_CINDER_KS_PW=4ba4d620600b4290
 
 # The Cinder backend to use, valid options are: lvm, gluster, nfs
 CONFIG_CINDER_BACKEND=lvm
@@ -127,7 +116,7 @@ CONFIG_CINDER_VOLUMES_CREATE=y
 
 # Cinder's volumes group size. Note that actual volume size will be
 # extended with 3% more space for VG metadata.
-CONFIG_CINDER_VOLUMES_SIZE=12G
+CONFIG_CINDER_VOLUMES_SIZE=20G
 
 # A single or comma separated list of gluster volume shares to mount,
 # eg: ip-address:/vol-name
@@ -157,10 +146,10 @@ CONFIG_NOVA_COMPUTE_HOSTS=10.2.4.103
 CONFIG_NOVA_CONDUCTOR_HOST=10.2.4.101
 
 # The password to use for the Nova to access DB
-CONFIG_NOVA_DB_PW=bdf9fb788dc8467d
+CONFIG_NOVA_DB_PW=28b953681c3d4751
 
 # The password to use for the Nova to authenticate with Keystone
-CONFIG_NOVA_KS_PW=81677f6f37e04f99
+CONFIG_NOVA_KS_PW=a45b0a0a95f64012
 
 # The IP address of the server on which to install the Nova Scheduler
 # service
@@ -191,7 +180,7 @@ CONFIG_NOVA_NETWORK_PUBIF=eth2
 CONFIG_NOVA_NETWORK_PRIVIF=eth1
 
 # IP Range for network manager
-CONFIG_NOVA_NETWORK_FIXEDRANGE=192.168.1.0/24
+CONFIG_NOVA_NETWORK_FIXEDRANGE=192.168.5.0/22
 
 # IP Range for Floating IP's
 CONFIG_NOVA_NETWORK_FLOATRANGE=10.1.3.20/29
@@ -217,10 +206,10 @@ CONFIG_NOVA_NETWORK_SIZE=255
 CONFIG_NEUTRON_SERVER_HOST=
 
 # The password to use for Neutron to authenticate with Keystone
-CONFIG_NEUTRON_KS_PW=f4bc92555b61459b
+CONFIG_NEUTRON_KS_PW=b120615d5e414c6a
 
 # The password to use for Neutron to access DB
-CONFIG_NEUTRON_DB_PW=fe7d9f7c14a74eb6
+CONFIG_NEUTRON_DB_PW=62016f00ad2e4ef8
 
 # A comma separated list of IP addresses on which to install Neutron
 # L3 agent
@@ -243,7 +232,7 @@ CONFIG_NEUTRON_METADATA_HOSTS=
 
 # A comma separated list of IP addresses on which to install Neutron
 # metadata agent
-CONFIG_NEUTRON_METADATA_PW=084c80b243034da7
+CONFIG_NEUTRON_METADATA_PW=efbb726d244c49c1
 
 # The type of network to allocate for tenant networks
 CONFIG_NEUTRON_LB_TENANT_NETWORK_TYPE=local
@@ -265,7 +254,7 @@ CONFIG_NEUTRON_OVS_VLAN_RANGES=
 
 # A comma separated list of bridge mappings for the Neutron
 # openvswitch plugin
-CONFIG_NEUTRON_OVS_BRIDGE_MAPPINGS=br-eth1
+CONFIG_NEUTRON_OVS_BRIDGE_MAPPINGS=
 
 # A comma separated list of colon-separated OVS bridge:interface
 # pairs. The interface will be added to the associated bridge.
@@ -302,7 +291,7 @@ CONFIG_SSL_KEY=
 CONFIG_SWIFT_PROXY_HOSTS=10.2.4.101
 
 # The password to use for the Swift to authenticate with Keystone
-CONFIG_SWIFT_KS_PW=8c4961d2e9b144e4
+CONFIG_SWIFT_KS_PW=70027b10b68d4db0
 
 # A comma separated list of IP addresses on which to install the
 # Swift Storage services, each entry should take the format
@@ -346,10 +335,10 @@ CONFIG_PROVISION_ALL_IN_ONE_OVS_BRIDGE=n
 CONFIG_HEAT_HOST=
 
 # The password used by Heat user to authenticate against MySQL
-CONFIG_HEAT_DB_PW=7d934e4e60214c2e
+CONFIG_HEAT_DB_PW=0e1fbdf00aee4134
 
 # The password to use for the Heat to authenticate with Keystone
-CONFIG_HEAT_KS_PW=87d3f02335ca4a2f
+CONFIG_HEAT_KS_PW=84abc840586d4df3
 
 # Set to 'y' if you would like Packstack to install Heat CloudWatch
 # API
@@ -371,10 +360,10 @@ CONFIG_HEAT_CFN_HOST=
 CONFIG_CEILOMETER_HOST=10.2.4.101
 
 # Secret key for signing metering messages.
-CONFIG_CEILOMETER_SECRET=e7575483027d4adc
+CONFIG_CEILOMETER_SECRET=de239beebda94ad7
 
 # The password to use for Ceilometer to authenticate with Keystone
-CONFIG_CEILOMETER_KS_PW=26dfff981bfd4503
+CONFIG_CEILOMETER_KS_PW=cf0bfa5891b04a3d
 
 # To subscribe each server to EPEL enter "y"
 CONFIG_USE_EPEL=n
@@ -387,4 +376,4 @@ CONFIG_REPO=
 CONFIG_NAGIOS_HOST=10.2.4.101
 
 # The password of the nagiosadmin user on the Nagios server
-CONFIG_NAGIOS_PW=11e19d37372b4702
+CONFIG_NAGIOS_PW=aa6b2a7b6638487f
