@@ -1,13 +1,13 @@
 ## Answer File corresponding to scenario n°1 V2.0
-## Date         : 14/10/2013
-## Contributor  : Benoît Chalut
-## Project      : Master Thesis HES-SO Openstack HA
+## Date : 14/10/2013
+## Contributor : Benoît Chalut
+## Project : Master Thesis HES-SO Openstack HA
 
-#IP Cloud Controller  : 10.2.4.101
-#IP Network Node      : 10.2.4.102
-#IP Compute Node01    : 10.2.4.103
-#IP Databas Server    : 10.2.4.104
-#IP Cinder Volume     : 10.2.4.105
+#IP Cloud Controller : 10.2.4.101
+#IP Network Node : 10.2.4.102
+#IP Compute Node01 : 10.2.4.103
+#IP Databas Server : 10.2.4.104
+#IP Cinder Volume : 10.2.4.105
 
 [general]
 
@@ -121,7 +121,7 @@ CONFIG_CINDER_KS_PW=201ad31796c84767
 CONFIG_CINDER_BACKEND=lvm
 
 # Create Cinder's volumes group. This should only be done for testing
-# on a proof-of-concept installation of Cinder.  This will create a
+# on a proof-of-concept installation of Cinder. This will create a
 # file-backed volume group and is not suitable for production usage.
 CONFIG_CINDER_VOLUMES_CREATE=y
 
