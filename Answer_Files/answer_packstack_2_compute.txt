@@ -109,7 +109,7 @@ CONFIG_GLANCE_DB_PW=e23812efa80d4b3e
 CONFIG_GLANCE_KS_PW=219c5216a2a045ad
 
 # The IP address of the server on which to install Cinder
-CONFIG_CINDER_HOST=10.2.4.104
+CONFIG_CINDER_HOST=10.2.4.103
 
 # The password to use for the Cinder to access DB
 CONFIG_CINDER_DB_PW=a1f5a38c2e474e71

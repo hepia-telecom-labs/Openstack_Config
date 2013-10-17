@@ -6,7 +6,7 @@
 #IP Cloud Controller  : 10.2.4.101
 #IP Network Node      : 10.2.4.102
 #IP Compute Node01    : 10.2.4.103
-#IP Cinder Node API   : 10.2.4.104
+#IP Databas Server    : 10.2.4.104
 #IP Cinder Volume     : 10.2.4.105
 
 [general]
@@ -70,7 +70,7 @@ CONFIG_NAGIOS_INSTALL=y
 EXCLUDE_SERVERS=
 
 # The IP address of the server on which to install MySQL
-CONFIG_MYSQL_HOST=10.2.4.101
+CONFIG_MYSQL_HOST=10.2.4.104
 
 # Username for the MySQL admin user
 CONFIG_MYSQL_USER=root
@@ -79,7 +79,7 @@ CONFIG_MYSQL_USER=root
 CONFIG_MYSQL_PW=6eaf97d4c1f444c3
 
 # The IP address of the server on which to install the QPID service
-CONFIG_QPID_HOST=10.2.4.101
+CONFIG_QPID_HOST=10.2.4.104
 
 # The IP address of the server on which to install Keystone
 CONFIG_KEYSTONE_HOST=10.2.4.101
@@ -109,7 +109,7 @@ CONFIG_GLANCE_DB_PW=e23812efa80d4b3e
 CONFIG_GLANCE_KS_PW=219c5216a2a045ad
 
 # The IP address of the server on which to install Cinder
-CONFIG_CINDER_HOST=10.2.4.104
+CONFIG_CINDER_HOST=10.2.4.101
 
 # The password to use for the Cinder to access DB
 CONFIG_CINDER_DB_PW=a1f5a38c2e474e71
@@ -127,7 +127,7 @@ CONFIG_CINDER_VOLUMES_CREATE=y
 
 # Cinder's volumes group size. Note that actual volume size will be
 # extended with 3% more space for VG metadata.
-CONFIG_CINDER_VOLUMES_SIZE=12G
+CONFIG_CINDER_VOLUMES_SIZE=20G
 
 # A single or comma separated list of gluster volume shares to mount,
 # eg: ip-address:/vol-name
@@ -310,7 +310,7 @@ CONFIG_SWIFT_KS_PW=8c4961d2e9b144e4
 # on 127.0.0.1 as a swift storage device(packstack does not create the
 # filesystem, you must do this first), if /dev is omitted Packstack
 # will create a loopback device for a test setup
-CONFIG_SWIFT_STORAGE_HOSTS=10.2.4.101/fedora_controller/swift
+CONFIG_SWIFT_STORAGE_HOSTS=10.2.4.101/fedora/swift
 
 # Number of swift storage zones, this number MUST be no bigger than
 # the number of storage devices configured
@@ -384,7 +384,7 @@ CONFIG_USE_EPEL=n
 CONFIG_REPO=
 
 # The IP address of the server on which to install the Nagios server
-CONFIG_NAGIOS_HOST=10.2.4.101
+CONFIG_NAGIOS_HOST=10.2.4.104
 
 # The password of the nagiosadmin user on the Nagios server
 CONFIG_NAGIOS_PW=11e19d37372b4702
