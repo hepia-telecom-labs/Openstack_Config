@@ -1,12 +1,12 @@
-## Answer File corresponding to scenario n°1 V2.0
-## Date : 14/10/2013
+## Answer File corresponding to scenario n°2 V2.0 (Use for HA)
+## Date : 17/10/2013
 ## Contributor : Benoît Chalut
 ## Project : Master Thesis HES-SO Openstack HA
 
 #IP Cloud Controller : 10.2.4.101
 #IP Network Node : 10.2.4.102
 #IP Compute Node01 : 10.2.4.103
-#IP Databas Server : 10.2.4.104
+#IP Database Server : 10.2.4.104
 #IP Cinder Volume : 10.2.4.105
 
 [general]
