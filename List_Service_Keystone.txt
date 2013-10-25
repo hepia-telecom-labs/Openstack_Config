@@ -1,0 +1,31 @@
++----------------------------------+-----------+----------------------------------------------+----------------------------------------------+-----------------------------------------+----------------------------------+
+|                id                |   region  |                  publicurl                   |                 internalurl                  |                 adminurl                |            service_id            |
++----------------------------------+-----------+----------------------------------------------+----------------------------------------------+-----------------------------------------+----------------------------------+
+| 107214083c6e44d5b371b407cebb0bb5 | RegionOne |   http://10.2.4.101:8776/v1/%(tenant_id)s    |   http://10.2.4.101:8776/v1/%(tenant_id)s    | http://10.2.4.101:8776/v1/%(tenant_id)s | 1c5e6191384b46758001d454b353aa76 |
+| 7b11f193ce074245ac805ea5cc4340a9 | RegionOne |    http://10.2.4.101:8773/services/Cloud     |    http://10.2.4.101:8773/services/Cloud     |  http://10.2.4.101:8773/services/Admin  | b04398ae8e0e43f49b32ff5f311b32ee |
+| 9e98d15cf24848a6b05eeb3a570b00bd | RegionOne |            http://10.2.4.101:9292            |            http://10.2.4.101:9292            |          http://10.2.4.101:9292         | 8d98a49f02674090b9d09e5bd1bdf98e |
+| a8695f2abc3f4031b6c129106a1e5413 | RegionOne |            http://10.2.4.101:8777            |            http://10.2.4.101:8777            |          http://10.2.4.101:8777         | 16b23c6c5d00410a8c0d7aaba825b00f |
+| b14ebba1b70a4e579e5c28b66fdbb95f | RegionOne |         http://10.2.4.101:5000/v2.0          |         http://10.2.4.101:5000/v2.0          |       http://10.2.4.101:35357/v2.0      | 2a887e2bd5f04dfca0b96f4b99a3d8b4 |
+| b5b07ebd98bb4f6dab4f3855a577cf5d | RegionOne | http://10.2.4.101:8080/v1/AUTH_%(tenant_id)s | http://10.2.4.101:8080/v1/AUTH_%(tenant_id)s |         http://10.2.4.101:8080/         | dec04839008d47f1a5472c20d9faf0e0 |
+| f179b32821db4feebce7c00f1ea18d9f | RegionOne |   http://10.2.4.101:8774/v2/%(tenant_id)s    |   http://10.2.4.101:8774/v2/%(tenant_id)s    | http://10.2.4.101:8774/v2/%(tenant_id)s | 0dc2a1bfa8a84b1f91e8bc04fac549a3 |
+| f23b963cadfc470fb6be84db0412733e | RegionOne |            http://10.2.4.101:8080            |            http://10.2.4.101:8080            |          http://10.2.4.101:8080         | 93f016af7c944daebf9396e376ec7b98 |
++----------------------------------+-----------+----------------------------------------------+----------------------------------------------+-----------------------------------------+----------------------------------+
+
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+
+
++----------------------------------+------------+--------------+--------------------------------+
+|                id                |    name    |     type     |          description           |
++----------------------------------+------------+--------------+--------------------------------+
+| 16b23c6c5d00410a8c0d7aaba825b00f | ceilometer |   metering   |   Openstack Metering Service   |
+| 1c5e6191384b46758001d454b353aa76 |   cinder   |    volume    |         Cinder Service         |
+| 8d98a49f02674090b9d09e5bd1bdf98e |   glance   |    image     |    Openstack Image Service     |
+| 2a887e2bd5f04dfca0b96f4b99a3d8b4 |  keystone  |   identity   |   OpenStack Identity Service   |
+| 0dc2a1bfa8a84b1f91e8bc04fac549a3 |    nova    |   compute    |   Openstack Compute Service    |
+| b04398ae8e0e43f49b32ff5f311b32ee |  nova_ec2  |     ec2      |          EC2 Service           |
+| dec04839008d47f1a5472c20d9faf0e0 |   swift    | object-store | Openstack Object-Store Service |
+| 93f016af7c944daebf9396e376ec7b98 |  swift_s3  |      s3      |      Openstack S3 Service      |
++----------------------------------+------------+--------------+--------------------------------+
+
+
