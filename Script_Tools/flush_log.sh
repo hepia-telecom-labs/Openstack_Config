@@ -18,5 +18,5 @@ echo "" > /var/log/controller2/nova.log;
 echo "" > /var/log/controller2/haproxy_status.log;
 
 echo "" > /var/log/node1/compute.log;
-
+echo "" > /var/log/node2/compute.log;
 echo "" > /var/log/network1/network.log;
