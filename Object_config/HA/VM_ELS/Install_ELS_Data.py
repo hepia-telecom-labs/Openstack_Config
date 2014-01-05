@@ -15,7 +15,7 @@ os.system("systemctl disable iptables")
 
 name_cluster= "cluster-els-90"
 name_node=socket.gethostname()
-number_replicas="6"
+number_replicas="2"
 
 with open('/var/lib/elasticsearch-0.90.7/config/elasticsearch.yml', 'a') as file:
     # read a list of lines into data

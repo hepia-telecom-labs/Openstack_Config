@@ -15,7 +15,7 @@ os.system("systemctl disable iptables")
 
 name_cluster= "cluster-els-90"
 name_node=socket.gethostname()
-number_replicas="4"
+number_replicas="1"
 
 with open('/var/lib/elasticsearch-0.90.7/config/elasticsearch.yml', 'a') as file:
     # read a list of lines into data
@@ -34,6 +34,9 @@ with open('/var/lib/elasticsearch-0.90.7/config/elasticsearch.yml', 'a') as file
     file.write("\n")
     file.write("node.data: false")
 file.closed
+
+os.system("sh /var/lib/elasticsearch-0.90.7/bin/plugin -install mobz/elasticsearch-head")
+os.system("sh /var/lib/elasticsearch-0.90.7/bin/plugin -install royrusso/elasticsearch-HQ")
 os.system("/var/lib/elasticsearch-0.90.7/bin/elasticsearch")
 
 os.system("echo '########## Finish #############'")
