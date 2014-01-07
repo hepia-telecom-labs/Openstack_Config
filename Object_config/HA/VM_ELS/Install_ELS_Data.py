@@ -5,7 +5,7 @@ import urllib
 import socket
 
 os.system("yum -y update")
-os.system("yum -y install java nano wget unzip")
+os.system("yum -y install iftop java nano wget unzip")
 
 
 urllib.urlretrieve('https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.7.zip',"elasticsearch-0.90.7.zip")

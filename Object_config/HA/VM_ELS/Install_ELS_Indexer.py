@@ -5,7 +5,7 @@ import urllib
 import socket
 
 os.system("yum -y update")
-os.system("yum -y install java nano wget unzip")
+os.system("yum -y install iftop java nano wget unzip")
 
 
 urllib.urlretrieve('https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.7.zip',"elasticsearch-0.90.7.zip")
@@ -33,6 +33,9 @@ with open('/var/lib/elasticsearch-0.90.7/config/elasticsearch.yml', 'a') as file
     file.write(number_replicas)
     file.write("\n")
     file.write("node.data: false")
+    file.write("\n")
+    file.write("node.master: true")
+    file.write("\n")
 file.closed
 
 os.system("sh /var/lib/elasticsearch-0.90.7/bin/plugin -install mobz/elasticsearch-head")
