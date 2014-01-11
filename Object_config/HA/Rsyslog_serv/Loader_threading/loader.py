@@ -20,13 +20,13 @@ name_node=socket.gethostname()
 #times_stamp=date.strftime("%Y-%m-%d")+"T"+date.strftime("%H:%M:%S.%s%Z")
 messages_val="Testing Load, Cluster is unavailable########################################"
 severity="ALERT"
-nb_message=1000
+nb_message=100000
 date_start = datetime.datetime.now()
 
 
 
 def load(message_all,severity_log,name_host,nb):
-    es = elasticsearch.Elasticsearch("192.168.1.9:9200")
+    es = elasticsearch.Elasticsearch("192.168.1.13:9200")
     for i in range(nb):
         date = datetime.datetime.now()
         times_stamp=date.strftime("%Y-%m-%dT%H:%M:%S.%fZ")
