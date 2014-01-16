@@ -28,13 +28,13 @@ with open('/var/lib/elasticsearch-0.90.7/config/elasticsearch.yml', 'a') as file
     file.write("\n")
     file.write("node.name: ")
     file.write(name_node)
-    file.write("\n")
-    file.write("index.number_of_replicas: ")
-    file.write(number_replicas)
+#    file.write("\n")
+#    file.write("index.number_of_replicas: ")
+#    file.write(number_replicas)
     file.write("\n")
     file.write("node.data: false")
     file.write("\n")
-    file.write("node.master: true")
+    file.write("node.master: false")
     file.write("\n")
 file.closed
 

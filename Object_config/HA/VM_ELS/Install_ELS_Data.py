@@ -16,6 +16,7 @@ os.system("systemctl disable iptables")
 name_cluster= "cluster-els-90"
 name_node=socket.gethostname()
 number_replicas="2"
+number_shards="4"
 
 with open('/var/lib/elasticsearch-0.90.7/config/elasticsearch.yml', 'a') as file:
     # read a list of lines into data
@@ -33,6 +34,10 @@ with open('/var/lib/elasticsearch-0.90.7/config/elasticsearch.yml', 'a') as file
     file.write(number_replicas)
     file.write("\n")
     file.write("node.data: true")
+    file.write("\n")
+    file.write("index.number_of_shards: ")
+    file.write(number_shards)
+    file.write("\n")
 file.closed
 os.system("/var/lib/elasticsearch-0.90.7/bin/elasticsearch")
 
